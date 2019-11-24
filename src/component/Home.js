@@ -32,8 +32,8 @@ const Home = props => (
 
         <h3>{props.context.value.input}</h3> 
 
-        <Input type="text" name="input1" onChange={props.context.actions.updateValue}></Input>
-        <button type="button" onClick={props.context.actions.submit}> submit </button>
+        <Input type="text" name="input1" onChange={props.context.actions.updateValues}></Input>
+        <button type="button" onClick={props.context.actions.submited}> submit </button>
     </div>
 )
 

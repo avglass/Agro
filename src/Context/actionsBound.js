@@ -1,11 +1,7 @@
 import {updateValue, submit} from "./actions";
 
-// I tried binding my actions but errors kept getting thrown
+const updateValues = updateValue.bind(this);
 
-
-this.updateValues = this.updateValue.bind(this);
-
-this.submited = this.submit.bind(this);
-
+const submited = submit.bind(this);
 
 export default {updateValues, submited}
