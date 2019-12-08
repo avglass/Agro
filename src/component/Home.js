@@ -21,12 +21,13 @@ export const Home = (props) => (
 
         <p>You should click the github link and look at my .src/app.js file</p>
 
-        <input type="text"></input>
+        <p>try resetting the value {props.values.test}</p>
 
-        <button type="button">Save</button>
+        <input type="text" onChange={props.actions.update}></input>
 
-        {console.log(props.values)}
-        {console.log(props.actions)}
+        <button type="button" onClick={props.actions.test}>Save</button>
+
+        {console.log(props.values.test)}
 
     </div>
 )

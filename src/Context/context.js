@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import store from './store';
-import actions from './actions';
+import actions from './boundActions';
+
 
 export const myContext = React.createContext();
 

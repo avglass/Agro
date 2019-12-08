@@ -1,3 +1,4 @@
 export default {
-    test: "Hello World"
+    test: "here",
+    value: "",
   }
