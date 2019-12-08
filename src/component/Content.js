@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useRoutes } from 'hookrouter';
-import { Home } from './Home';
+import  Home  from './Home';
 import { Two } from './pageTwo';
 import { NoPageFound } from './NoPageFound';
 

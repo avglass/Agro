@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import {WithContext} from '../Context/context';
 
 const Title = styled.h2`
     text-align: center;
 `;
 
-export const Home = () => (  
+export const Home = (props) => (  
     <div>
         <Title> React/Webpack </Title>
 
@@ -19,5 +20,16 @@ export const Home = () => (
         </ul>
 
         <p>You should click the github link and look at my .src/app.js file</p>
+
+        <input type="text"></input>
+
+        <button type="button">Save</button>
+
+        {console.log(props.values)}
+        {console.log(props.actions)}
+
     </div>
 )
+
+
+export default WithContext(Home);
