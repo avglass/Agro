@@ -5,7 +5,7 @@ __Dependencies__
 - [Styled-Components](https://www.styled-components.com/)
 - [Hookrouter](https://github.com/Paratron/hookrouter)
 
-__[Installation]__
+__Installation__
 
 `git clone https://github.com/avglass/React-webpack-boilerplate.git`
 
