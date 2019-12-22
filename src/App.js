@@ -44,7 +44,6 @@ a {
 `;
 
 const StyledA = styled.a`
-    color: black;
     text-decoration: none;
 `;
 
