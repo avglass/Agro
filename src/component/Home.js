@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
+import { WithContext } from '../Context/mainContext';
 
 const Title = styled.h2`
     text-align: center;
@@ -8,7 +9,13 @@ const P = styled.p`
     font-size: 25px;
 `;
 
-export const Home = () => (  
+const Input = styled.input`
+    content: center;
+    width: 30px;
+    height: 15px;
+`;
+
+const Home = props => (  
     <div>
         <Title> React/Webpack </Title>
         
@@ -16,11 +23,20 @@ export const Home = () => (
         
         <ul>
             <li>React</li>
+            <li>Context</li>
+            <li>Hookrouter</li>
             <li>Webpack</li>
             <li>Styled-components</li>
-            <li>Hookrouter</li>
         </ul>
         
         <p>You should click the github link and look at my .src/app.js file</p>
+
+        {/* When the user tries to type or submit setstate throws errors */}
+
+        <h3>{props.context.value.input}</h3> 
+
+        <Input type="text" name="input1" onChange={props.context.actions.updateValues}></Input>
+        <button type="button" onClick={props.context.actions.submited}> submit </button>
     </div>
 );
+
