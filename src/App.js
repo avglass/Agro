@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { A } from 'hookrouter';
 import { Content }  from './component/Content';
-import { Context } from './Context/context';
 
 const SideBar = styled.div`
 	background: #D9F7FB;
@@ -44,13 +43,12 @@ a {
 `;
 
 const StyledA = styled.a`
-    color: black;
     text-decoration: none;
 `;
 
 // App is the layout of the page
 export const App = () => (
-    <Context>
+    <div>
         <SideBar>
             <header className="avatar">
                 <img src='https://66.media.tumblr.com/a5c43b2ad04d2df4b89cfed4b8b4ea77/tumblr_no41ifB9zT1r47bczo1_1280.jpg'/>
@@ -67,5 +65,5 @@ export const App = () => (
 
         {/* content is where the different pages load */}
         <Content />
-    </Context>
+    </div>
 )
